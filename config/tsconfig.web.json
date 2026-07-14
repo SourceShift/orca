@@ -5,14 +5,16 @@
     "../src/renderer/src/**/*",
     "../src/renderer/src/**/*.tsx",
     "../src/preload/api-types.ts",
-    "../src/shared/**/*"
+    "../src/shared/**/*",
+    "../coevolve/ui/**/*"
   ],
   "compilerOptions": {
     "composite": true,
     "jsx": "react-jsx",
     "paths": {
       "@renderer/*": ["../src/renderer/src/*"],
-      "@/*": ["../src/renderer/src/*"]
+      "@/*": ["../src/renderer/src/*"],
+      "@coevolve/*": ["../coevolve/ui/*"]
     }
   }
 }
