@@ -15,6 +15,6 @@
   "webTabs": {
     "//": "Not MCP — add these as Orca browser tabs for the learning-loop views.",
     "run-trajectory": "http://127.0.0.1:7090",
-    "contextnest-memory": "http://127.0.0.1:7048"
+    "contextnest-memory": "http://127.0.0.1:28080"
   }
 }

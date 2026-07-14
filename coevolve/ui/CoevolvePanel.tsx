@@ -23,12 +23,14 @@ import {
   TopologyView
 } from './views/Brain'
 import { ConductorView, MemoryView, ResearchView, ReviewView } from './views/Brain2'
+import { MemoryLaneView } from './views/Memory'
 
 type Tab =
   | 'loop'
   | 'bandit'
   | 'gepa'
   | 'memory'
+  | 'mem'
   | 'fail'
   | 'pattern'
   | 'topo'
@@ -41,7 +43,8 @@ const TABS: { id: Tab; label: string }[] = [
   { id: 'loop', label: 'Loop' },
   { id: 'bandit', label: 'Bandit' },
   { id: 'gepa', label: 'GEPA' },
-  { id: 'memory', label: 'Memory' },
+  { id: 'memory', label: 'Lanes' },
+  { id: 'mem', label: 'Memory' },
   { id: 'fail', label: 'Fail' },
   { id: 'pattern', label: 'Pattern' },
   { id: 'topo', label: 'Topo' },
@@ -221,6 +224,7 @@ export function CoevolvePanel(): React.JSX.Element {
         {tab === 'pattern' && <PatternsView />}
         {tab === 'topo' && <TopologyView />}
         {tab === 'memory' && <MemoryView />}
+        {tab === 'mem' && <MemoryLaneView />}
         {tab === 'cond' && <ConductorView />}
         {tab === 'review' && <ReviewView />}
         {tab === 'rnd' && <ResearchView />}
