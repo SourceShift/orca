@@ -1,0 +1,20 @@
+{
+  "//": "Coevolve control-plane MCP servers for Orca. Copy the entries under mcpServers",
+  "//2": "into Orca's MCP config (Settings → MCP). stdio transport, JSON-RPC 2.0.",
+  "mcpServers": {
+    "mini-ork": {
+      "//": "Steer/dispatch the mini-ork brain. Point MINI_ORK_HOME at the target repo's .mini-ork.",
+      "command": "/Volumes/docker-ssd/ps/mini-ork/bin/mini-ork-mcp-steering",
+      "args": [],
+      "env": {
+        "MINI_ORK_HOME": "${workspaceFolder}/.mini-ork",
+        "MINI_ORK_ROOT": "/Volumes/docker-ssd/ps/mini-ork"
+      }
+    }
+  },
+  "webTabs": {
+    "//": "Not MCP — add these as Orca browser tabs for the learning-loop views.",
+    "run-trajectory": "http://127.0.0.1:7090",
+    "contextnest-memory": "http://127.0.0.1:7048"
+  }
+}
